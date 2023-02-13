@@ -12,7 +12,9 @@
 <style>
     #modelo{
        width: 600px;
-        height:900px;
+       height:900px;
+        margin-left: 50px;
+        margin-top: 100px;
     }
 </style>
 
@@ -20,22 +22,14 @@
 <model-viewer 
               id="modelo"
               src="src/deskfinal.glb" 
-              ar 
-              ar-modes="scene-viewer webxr quick-look" 
+              ar  
               camera-controls 
               camera-orbit="-30deg 55deg 3.5m"
               shadow-intensity="2" 
               exposure="1.6">
-    
-    <div class="progress-bar hide" slot="progress-bar">
-        <div class="update-bar"></div>
-    </div>
     <button slot="ar-button" id="ar-button">
         View in your space
     </button>
-    <div id="ar-prompt">
-        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
-    </div>
 </model-viewer>
 
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
