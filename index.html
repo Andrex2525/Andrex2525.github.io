@@ -11,26 +11,28 @@
     #modelo{
         width: 350px;
         height: 800px:
-        margin-top: 200px;
     }
+    #titulo{
+        margin-bottom: 200px;
 </style>
 
 <body>
-<nav class="navbar bg-body-tertiary">
-  <div class="container-fluid">
-    <span class="navbar-brand mb-0 h1">Desk Design</span>
-  </div>
-</nav>
-    
-<model-viewer 
-              id="modelo"
-              src="src/deskfinal.glb" 
-              ar  
-              camera-controls 
-              camera-orbit="-150deg 50deg 2.5m"
-              shadow-intensity="2" 
-              exposure="1.6">
-</model-viewer>
+    <div id="titulo">
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Desk Design</span>
+          </div>
+        </nav>
+     </div>  
+    <model-viewer 
+                  id="modelo"
+                  src="src/deskfinal.glb" 
+                  ar  
+                  camera-controls 
+                  camera-orbit="-150deg 50deg 2.5m"
+                  shadow-intensity="2" 
+                  exposure="1.6">
+    </model-viewer>
 
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
